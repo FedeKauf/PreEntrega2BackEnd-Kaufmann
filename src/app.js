@@ -75,7 +75,6 @@ socket.on('id', email=>{
       });
     
   })
-  
 
     socket.on('identificacion',nombre=>{
         console.log(`Se ha conectado ${nombre}`)

@@ -1,8 +1,5 @@
-//const Router=require('express').Router
 import { Router } from 'express';
-//const path=require('path')
 import path from 'path';
-//const fs=require('fs')
 import fs from 'fs';
 import __dirname from '../utils.js';
 

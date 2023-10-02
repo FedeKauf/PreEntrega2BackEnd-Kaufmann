@@ -1,5 +1,4 @@
-import {Router, json} from 'express'
-import { productModel } from '../dao/models/entities.model.js'
+import {Router} from 'express'
 import { BASE_URL } from '../app.js'
 export const router=Router()
 
@@ -12,7 +11,6 @@ router.get('/chat', (req,res)=> {
   
 
 router.get('/', async (req, res) => {
-    //const products = await productModel.find().limit(limit).lean().exec()
     const queryObj = req.query
     const queryString = Object.keys(queryObj)
         .map(key => `${key}=${queryObj[key]}`)
